@@ -2,8 +2,8 @@
 
 namespace LukasMu\Rickroll\Tests;
 
-use Orchestra\Testbench\TestCase;
 use LukasMu\Rickroll\RickrollServiceProvider;
+use Orchestra\Testbench\TestCase;
 
 class BasicTest extends TestCase
 {
@@ -22,7 +22,7 @@ class BasicTest extends TestCase
     public function test_redirect_availability()
     {
         $headers = get_headers('https://player.vimeo.com/video/148751763?autoplay=1&muted=1');
-        $this->assertTrue($headers && strpos( $headers[0], '200'));
+        $this->assertTrue($headers && strpos($headers[0], '200'));
     }
 
     public function test_invalid_url()
@@ -35,11 +35,11 @@ class BasicTest extends TestCase
     public function test_config_publishing()
     {
         $this->artisan('vendor:publish', [
-            '--provider' => 'LukasMu\Rickroll\RickrollServiceProvider'
+            '--provider' => 'LukasMu\Rickroll\RickrollServiceProvider',
         ]);
         $this->assertFileExists(config_path('rickroll.php'));
         $this->assertFileIsReadable(config_path('rickroll.php'));
-        $this->assertFileEquals(config_path('rickroll.php'), __DIR__ . '/../config/rickroll.php');
+        $this->assertFileEquals(config_path('rickroll.php'), __DIR__.'/../config/rickroll.php');
         $this->assertTrue(unlink(config_path('rickroll.php')));
     }
 }

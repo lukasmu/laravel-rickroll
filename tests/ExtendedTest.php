@@ -2,8 +2,8 @@
 
 namespace LukasMu\Rickroll\Tests;
 
-use Orchestra\Testbench\TestCase;
 use LukasMu\Rickroll\RickrollServiceProvider;
+use Orchestra\Testbench\TestCase;
 
 class ExtendedTest extends TestCase
 {
