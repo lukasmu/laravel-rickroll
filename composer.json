@@ -49,7 +49,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RickrollServiceProvider"
+                "LukasMu\\Rickroll\\RickrollServiceProvider"
             ]
         }
     }
