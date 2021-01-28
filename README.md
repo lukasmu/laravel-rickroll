@@ -1,8 +1,8 @@
 # Rickroll people trying to break into your Laravel site
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-rickroll.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-rickroll)
-[![Build Status](https://img.shields.io/travis/lukasmu/laravel-rickroll/master.svg?style=flat-square)](https://travis-ci.org/lukasmu/laravel-rickroll)
-[![Quality Score](https://img.shields.io/scrutinizer/g/lukasmu/laravel-rickroll.svg?style=flat-square)](https://scrutinizer-ci.com/g/lukasmu/laravel-rickroll)
+[![Build Status](https://img.shields.io/travis/lukasmu/laravel-rickroll/master.svg?style=flat-square)](https://travis-ci.com/github/lukasmu/laravel-rickroll)
+[![StyleCI](https://github.styleci.io/repos/333728418/shield?branch=main)](https://github.styleci.io/repos/333728418?branch=main)
 [![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-rickroll.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-rickroll)
 
 Sometimes you just gotta rickroll people who attempt to mess with your website.
