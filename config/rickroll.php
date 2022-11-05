@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'redirect_url' => 'https://player.vimeo.com/video/148751763?autoplay=1&muted=1',
+    'redirect_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 
     /*
     |--------------------------------------------------------------------------

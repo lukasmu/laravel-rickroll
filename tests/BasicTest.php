@@ -16,14 +16,13 @@ class BasicTest extends TestCase
     {
         $response = $this->get('wp-admin');
         $response->assertStatus(302);
-        $response->assertRedirect('https://player.vimeo.com/video/148751763?autoplay=1&muted=1');
+        $response->assertRedirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
     }
 
     public function test_redirect_availability()
     {
-        // TODO: Find out why this test fails on Github Actions (but not locally). Maybe Vimeo is blocking the Github Actions servers?
-        // $headers = get_headers('https://player.vimeo.com/video/148751763?autoplay=1&muted=1');
-        // $this->assertTrue($headers && strpos($headers[0], '200'));
+        $headers = get_headers('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+        $this->assertTrue($headers && strpos($headers[0], '200'));
     }
 
     public function test_invalid_url()

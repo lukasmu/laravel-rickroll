@@ -14,27 +14,28 @@ jobs:
                       calculate-code-coverage: yes
         name: php${{ matrix.php }} / ${{ matrix.dependency-version }}
         steps:
-            -   name: Checkout code
-                uses: actions/checkout@v3
-            -   name: Get code coverage driver
-                uses: actions/github-script@v3.1
-                id: code-coverage-driver
-                with:
-                    script: 'return "${{ matrix.calculate-code-coverage }}" == "yes" ? "pcov" : "none"'
-                    result-encoding: string
-            -   name: Setup PHP
-                uses: shivammathur/setup-php@v2
-                with:
-                    php-version: ${{ matrix.php }}
-                    extensions: xml, mbstring
-                    coverage: ${{ steps.code-coverage-driver.outputs.result }}
-            -   name: Install dependencies
-                run: composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
-            -   name: Execute tests
-                run: vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+            - name: Checkout code
+              uses: actions/checkout@v3
+            - name: Get code coverage driver
+              uses: actions/github-script@v3.1
+              id: code-coverage-driver
+              with:
+                script: 'return "${{ matrix.calculate-code-coverage }}" == "yes" ? "pcov" : "none"'
+                result-encoding: string
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: ${{ matrix.php }}
+                extensions: xml, mbstring
+                coverage: ${{ steps.code-coverage-driver.outputs.result }}
+            - name: Install dependencies
+              run: composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
+            - name: Execute tests
+              run: vendor/bin/phpunit --coverage-clover build/logs/clover.xml
             - name: Upload coverage results to Coveralls
+              if: matrix.calculate-code-coverage == 'yes'
               env:
-                  COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                  composer global require php-coveralls/php-coveralls
-                  php-coveralls --coverage_clover=build/logs/clover.xml -v
+                composer global require php-coveralls/php-coveralls
+                php-coveralls --coverage_clover=build/logs/clover.xml -v
