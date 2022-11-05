@@ -6,7 +6,7 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                php: [7.3, 7.4, 8.0, 8.1]
+                php: [7.3, 7.4, 8.0]
                 dependency-version: [prefer-lowest, prefer-stable]
                 include:
                     - php: 8.1
@@ -36,4 +36,6 @@ jobs:
                 if: matrix.calculate-code-coverage == 'yes'
                 env:
                     COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                run: php vendor/bin/php-coveralls --verbose
+                run: |
+                    composer install php-coveralls/php-coveralls
+                    php vendor/bin/php-coveralls --verbose
