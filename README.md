@@ -4,6 +4,7 @@
 [![tests](https://github.com/lukasmu/laravel-rickroll/actions/workflows/tests.yml/badge.svg)](https://github.com/lukasmu/laravel-rickroll/actions/workflows/tests.yml)
 [![StyleCI](https://github.styleci.io/repos/333728418/shield?branch=main&style=flat)](https://github.styleci.io/repos/333728418?branch=main)
 [![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-rickroll.svg)](https://packagist.org/packages/lukasmu/laravel-rickroll)
+[![Coverage Status](https://coveralls.io/repos/github/lukasmu/laravel-rickroll/badge.svg?branch=main)](https://coveralls.io/github/lukasmu/laravel-rickroll?branch=main)
 
 Sometimes you just gotta rickroll people who attempt to mess with your website.
 This lightweight package adds some redirect routes to your Laravel website in order to redirect these people to Rick Astley's "Never Gonna Give You Up".
