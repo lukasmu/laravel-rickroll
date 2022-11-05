@@ -1,9 +1,9 @@
 # Rickroll people trying to break into your Laravel site
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-rickroll.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-rickroll)
-[![Build Status](https://img.shields.io/travis/lukasmu/laravel-rickroll/main.svg?style=flat-square)](https://travis-ci.com/github/lukasmu/laravel-rickroll)
-[![StyleCI](https://github.styleci.io/repos/333728418/shield?branch=main)](https://github.styleci.io/repos/333728418?branch=main)
-[![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-rickroll.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-rickroll)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-rickroll.svg)](https://packagist.org/packages/lukasmu/laravel-rickroll)
+![tests](https://github.com/lukasmu/laravel-rickroll/actions/workflows/tests/badge.svg)
+[![StyleCI](https://github.styleci.io/repos/333728418/shield?branch=main&style=flat)](https://github.styleci.io/repos/333728418?branch=main)
+[![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-rickroll.svg)](https://packagist.org/packages/lukasmu/laravel-rickroll)
 
 Sometimes you just gotta rickroll people who attempt to mess with your website.
 This lightweight package adds some redirect routes to your Laravel website in order to redirect these people to Rick Astley's "Never Gonna Give You Up".
