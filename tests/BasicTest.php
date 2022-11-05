@@ -21,9 +21,8 @@ class BasicTest extends TestCase
 
     public function test_redirect_availability()
     {
-        // TODO: Find out why this test fails on Travis (but not locally). Maybe Vimeo is blocking the Travis servers?
-        // $headers = get_headers('https://player.vimeo.com/video/148751763?autoplay=1&muted=1');
-        // $this->assertTrue($headers && strpos($headers[0], '200'));
+        $headers = get_headers('https://player.vimeo.com/video/148751763?autoplay=1&muted=1');
+        $this->assertTrue($headers && strpos($headers[0], '200'));
     }
 
     public function test_invalid_url()
