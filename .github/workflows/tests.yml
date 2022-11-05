@@ -33,9 +33,6 @@ jobs:
             -   name: Execute tests
                 run: vendor/bin/phpunit
             -   name: Upload coverage results to Coveralls
-                if: matrix.calculate-code-coverage == 'yes'
-                env:
-                    COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                run: |
-                    composer require php-coveralls/php-coveralls
-                    php vendor/bin/php-coveralls --verbose
+                uses: coverallsapp/github-action@master
+                with:
+                    github-token: ${{ secrets.GITHUB_TOKEN }}
