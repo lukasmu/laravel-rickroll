@@ -37,5 +37,5 @@ jobs:
                 env:
                     COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 run: |
-                    composer install php-coveralls/php-coveralls
+                    composer require php-coveralls/php-coveralls
                     php vendor/bin/php-coveralls --verbose
