@@ -8,7 +8,7 @@ jobs:
             matrix:
                 php: [7.3, 7.4, 8.0, 8.1]
                 dependency-version: [prefer-lowest, prefer-stable]
-        name: P${{ matrix.php }} - ${{ matrix.dependency-version }}
+        name: php${{ matrix.php }} / ${{ matrix.dependency-version }}
         steps:
             -   name: Checkout code
                 uses: actions/checkout@v3

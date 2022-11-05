@@ -1,7 +1,7 @@
 # Rickroll people trying to break into your Laravel site
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-rickroll.svg)](https://packagist.org/packages/lukasmu/laravel-rickroll)
-![tests](https://github.com/lukasmu/laravel-rickroll/actions/workflows/tests/badge.svg)
+![tests](https://github.com/lukasmu/laravel-rickroll/actions/workflows/tests.yml/badge.svg)
 [![StyleCI](https://github.styleci.io/repos/333728418/shield?branch=main&style=flat)](https://github.styleci.io/repos/333728418?branch=main)
 [![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-rickroll.svg)](https://packagist.org/packages/lukasmu/laravel-rickroll)
 
