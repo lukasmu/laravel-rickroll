@@ -26,7 +26,6 @@ jobs:
               uses: shivammathur/setup-php@v2
               with:
                 php-version: ${{ matrix.php }}
-                extensions: xml, mbstring
                 coverage: ${{ steps.code-coverage-driver.outputs.result }}
             - name: Install dependencies
               run: composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
