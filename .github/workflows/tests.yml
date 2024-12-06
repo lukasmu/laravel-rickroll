@@ -9,7 +9,7 @@ jobs:
                 php: [7.3, 7.4, 8.0]
                 dependency-version: [prefer-lowest, prefer-stable]
                 include:
-                    - php: 8.1
+                    - php: 8.2
                       dependency-version: prefer-stable
                       calculate-code-coverage: yes
         name: php${{ matrix.php }} / ${{ matrix.dependency-version }}
