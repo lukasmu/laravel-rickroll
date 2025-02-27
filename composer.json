@@ -10,7 +10,6 @@
     ],
     "homepage": "https://github.com/lukasmu/laravel-rickroll",
     "license": "MIT",
-    "type": "library",
     "authors": [
         {
             "name": "Lukas Müller",
@@ -52,5 +51,7 @@
                 "LukasMu\\Rickroll\\RickrollServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
