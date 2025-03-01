@@ -8,11 +8,9 @@ return [
     |--------------------------------------------------------------------------
     |
     | This option controls where the user is redirected when he accesses any
-    | of the RickRoll URLs.
+    | of the Rickroll URLs.
     | By default the user is redirected to the Rick Astley's "Never Gonna Give
-    | You Up" of course. The Vimeo player is used for a nice full screen
-    | experience. Unfortunately, we need to mute the video to allow for
-    | autoplay nowadays.
+    | You Up" of course.
     |
     */
 
@@ -20,7 +18,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | RickRoll URLs
+    | Rickroll URLs
     |--------------------------------------------------------------------------
     |
     | This array defines which URLs will be redirected.
