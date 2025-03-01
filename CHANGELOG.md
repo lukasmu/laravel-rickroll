@@ -10,6 +10,8 @@ All notable changes to `laravel-rickroll` will be documented in this file.
 
 **Full Changelog**: https://github.com/lukasmu/laravel-rickroll/compare/v1.0.5...v2.0.0
 
-## 1.0.0 - 2020-01-28
+## v1.0.0 - 2020-01-28
 
 - Initial release
+
+**Full Changelog**: https://github.com/lukasmu/laravel-rickroll/commits/v1.0.0
